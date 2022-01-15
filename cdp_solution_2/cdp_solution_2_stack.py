@@ -66,7 +66,7 @@ class CdpSolution2Stack(Stack):
             vpc_subnets=ec2.SubnetSelection(subnet_type=ec2.SubnetType.PUBLIC),
             # user_data=ec2.UserData.custom(userdata),
             security_group=unmomi_security_group,
-            keyName='ee-default-keypair'
+            key_name='ee-default-keypair'
             )
 
         this_stack = cdk.Stack.of(self)
